@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Link2paces</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #f4f7fb;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      overflow: hidden;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .logo-container {
+      position: relative;
+      text-align: center;
+      animation: fadeInScale 2s ease-out forwards;
+    }
+
+    .symbol img {
+      width: 150px;
+      animation: dropIn 1.2s ease-out forwards;
+      opacity: 0;
+      filter: drop-shadow(0 5px 20px rgba(0, 0, 0, 0.1));
+      border-radius: 50%;
+    }
+    span{
+        font-weight: 500;
+    }
+
+    .text {
+      font-size: 38px;
+      color: #1f4e8c;
+      margin-top: 18px;
+      letter-spacing: 1.5px;
+      animation: riseUp 1.2s ease-out 0.4s forwards;
+      opacity: 0;
+    }
+
+    @keyframes dropIn {
+      0% {
+        transform: translateY(-40px);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes riseUp {
+      0% {
+        transform: translateY(40px);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeInScale {
+      0% {
+        transform: scale(0.95);
+        opacity: 0;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="logo-container">
+    <div class="symbol">
+      <img src="logo .png" alt="Link2paces Logo Symbol">
+    </div>
+    <div class="text">Link <span>S</span>pace</div>
+  </div>
+</body>
+</html>
